@@ -5,6 +5,7 @@ MiniDLNA is a simple media server software, with the aim of being fully complian
 ## MiniDLNA Docker Images
 
 This image is based on Alpine Linux.
+Build is setup for armv7, arm64, and amd64.
 
 ### Usage
 
@@ -15,7 +16,7 @@ Example:
       -v <PATH_TO_MUSIC_DIR>:/opt/Music \
       -v <PATH_TO_VIDEOS_DIR>:/opt/Videos \
       -v <PATH_TO_PICUTRES_DIR>:/opt/Pictures \
-      geekduck/minidlna
+      codingpear/minidlna
 
 
 If you want to overwrite a config file:
@@ -26,4 +27,4 @@ If you want to overwrite a config file:
       -v <PATH_TO_VIDEOS_DIR>:/opt/Videos \
       -v <PATH_TO_PICUTRES_DIR>:/opt/Pictures \
       -v <PATH_TO_CONFIG_DIR>/minidlna.conf:/etc/minidlna.conf \
-      geekduck/minidlna
+      codingpear/minidlna
