@@ -13,3 +13,5 @@ EXPOSE 1900/udp
 EXPOSE 8200
 
 ENTRYPOINT [ "entrypoint.sh" ]
+
+HEALTHCHECK CMD wget --spider http://127.0.0.1:8200 || exit 1
