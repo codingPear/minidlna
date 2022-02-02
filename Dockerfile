@@ -13,5 +13,3 @@ EXPOSE 1900/udp
 EXPOSE 8200
 
 ENTRYPOINT [ "entrypoint.sh" ]
-
-HEALTHCHECK CMD curl --fail http://localhost:8200/ || exit 1
